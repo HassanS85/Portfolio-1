@@ -1,0 +1,37 @@
+
+.project-cards {  
+    height: 60vh;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "project1 project2 project3"
+      "project4 project5 project6";
+  }
+  
+  #project1 { grid-area: project1; }
+  
+  #project2 { grid-area: project2; }
+  
+  #project3 { grid-area: project3; }
+  
+  #project4 { grid-area: project4; }
+  
+  #project5 { grid-area: project5; }
+  
+  #project6 { grid-area: project6; }
+
+  .card {
+      height: 100%;
+      width: 100%;
+      &__image {
+          height: 200px;
+          width: 400px;
+      }
+
+      
+  }
+  
