@@ -4,50 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+    </style>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Portfolio-1</title>
 </head>
 <body>
     <Div class="main">
-        <div class="navigation">
+        <nav class="navigation">
             <div class="navigation__name">Hassan Seedat</div>
-            <div class="navigation__links">About</div>
-            <div class="navigation__links">Portfolio</div>
-            <div class="navigation__links">Contact</div>
-        </div>
-        <div class="title">
-            <div class="title__name">Junior Software Developer</div>
-            <div class="title_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <div class="navigation__link__container">
+                <div class="navigation__links"><a href= "#about">About</a></div>
+                <div class="navigation__links"><a href= "#portfolio">Portfolio</a></div>
+                <div class="navigation__links"><a href= "#contact">Contact</a></div>
+            </div>
+        </nav>
+        <header class="title">
+            <h1 class="title__name">Junior Software Developer</h1>
+            <p class="title_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Quidem, maiores similique eius unde esse quibusdam dicta voluptates molestiae quisquam
             impedit reiciendis voluptatibus aspernatur inventore ipsum,
             accusamus at harum voluptas temporibus!
-            </div>
-        </div>
-        <div class="portfolio">
-            <div class="portfolio__title">Portfolio</div>
-            <div class="portfolio__images__container"></div>
-                <div class="portfolio__images"></div>
-                <div class="portfolio__images"></div>
-                <div class="portfolio__images"></div>
-                <div class="portfolio__images"></div>
-                <div class="portfolio__images"></div>
-                <div class="portfolio__images"></div>
-        </div>
-        <div class="about">
-            <div class="about__title">About</div>
-            <div class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </header>
+
+        <section class="portfolio" id = "portfolio">
+            <h2 class="portfolio__title">Portfolio</h2>
+            <ul class="portfolio__cards">
+                <li class="portfolio__card"><img class="portfolio__image"  src="https://images.unsplash.com/photo-1652608243085-a867d2dd7f64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="blank Placeholders" /><strong>Project 1</strong></li>
+                <li class="portfolio__card"><img class="portfolio__image"  src="https://images.unsplash.com/photo-1652608243085-a867d2dd7f64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="blank Placeholders" /><strong>Project 2</strong></li>
+                <li class="portfolio__card"><img class="portfolio__image"  src="https://images.unsplash.com/photo-1652608243085-a867d2dd7f64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="blank Placeholders" /><strong>Project 3</strong></li>
+                <li class="portfolio__card"><img class="portfolio__image"  src="https://images.unsplash.com/photo-1652608243085-a867d2dd7f64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="blank Placeholders" /><strong>Project 4</strong></li>
+                <li class="portfolio__card"><img class="portfolio__image"  src="https://images.unsplash.com/photo-1652608243085-a867d2dd7f64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="blank Placeholders" /><strong>Project 5</strong></li>
+                <li class="portfolio__card"><img class="portfolio__image"  src="https://images.unsplash.com/photo-1652608243085-a867d2dd7f64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="blank Placeholders" /><strong>Project 6</strong></li>
+            </ul> 
+        </section>
+
+        <article class="about" id="about">
+            <h2 class="about__title">About</h2>
+            <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Quis quae quos quod harum neque, tempora molestias sint quas porro,
             veniam officiis qui tenetur eius fugit ullam dolorem, temporibus magni eaque!
-            </div>
-            <div class="about__photo"></div>
+            </p>
+            <img class="about__photo" src="./style/new1.jpg"/>
+    
+            <p class="personal__experience">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Facere omnis esse nulla rerum quas praesentium deserunt alias ex, laboriosam nihil in dignissimos?
+            Numquam deserunt ipsum repellendus distinctio non dolorum unde.
+            </p>
+            <p class="personal__interests">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Error ducimus eos, minima repellat enim libero sequi ex dignissimos fugit unde reprehenderit
+            voluptatum perspiciatis animi blanditiis rerum optio incidunt consequatur labore.
+            </p>
+        </article>
+
+        <section class="contact" id="contact">
+            <h2 class="contact__message">Get in Touch</h2>
+            <a class="contact__contact" href="#">Contact</a>
+        </section>
+
+        <div class="footer">
+            <div class="footer__links"></div>
         </div>
-        <div class="personal">
-            <div class="personal__experience">Experience</div>
-            <div class="personal__interests"></div>
-        </div>
-        <div class="contact">
-            <div class="contact__message">Get in Touch</div>
-            <div class="contact__contact">Contact</div>
-        </div>
-        <footer class="footer">Links</footer>
     </Div>       
 </html>

@@ -1,93 +1,116 @@
-body {
-    background-color: rgba(37, 35, 35, 0.932);
-}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
 
-main {
-    margin: 5%;
-}
-
-* { margin: 1%;
-    padding: 0};
-
-.job-info {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-
-}
-
-.project-cards {
-    margin: 5%;
+.main {
+    margin:0;
     padding: 0;
+    background-color: rgb(151, 190, 190);
+    font-family: 'Cormorant', serif;
+  }
+  
+  
+.navigation {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+  }
+  
+.title {
+    background-color: brown;
+}
+
+.portfolio {
+    background-color: yellow;
+}
+
+.about{
+    background-color: green;
+}
+
+.personal {
+    background-color: orange;
+}
+
+.contact {
+    background-color: pink;
+}
+
+.footer {
+    background-color: aqua;
 }
 
 
-.project-cards {  
-    height: 1vh;
-    width: 8vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 3px 3px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "project1 project2 project3"
-      "project4 project5 project6";
-  }
-  
-  #project1 { grid-area: project1; }
-  
-  #project2 { grid-area: project2; }
-  
-  #project3 { grid-area: project3; }
-  
-  #project4 { grid-area: project4; }
-  
-  #project5 { grid-area: project5; }
-  
-  #project6 { grid-area: project6; }
-
-  .card {
-      height: 70%;
-      width: 70%;
-      &__image {
-          height: 100px;
-          width: 200px;
-      }
-
-
-  }
-
-/* Style buttons */
-.button {
-    background-color: rgba(37, 35, 35, 0.932); /* Blue background */
-    border: none; /* Remove borders */
-    color: rgb(255, 255, 255); /* White text */
-    padding: 12px 16px; /* Some padding */
-    font-size: 16px; /* Set a font size */
-    cursor: pointer; /* Mouse pointer on hover */
+.navigation__name {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
 
   }
   
-  /* Darker background on mouse-over */
-  .btn:hover {
-    background-color: rgb(194, 191, 36);
-  }
-
-
-/* about section image css */
-.about {  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 15px 10px;
-    grid-auto-flow: column;
-    justify-items: center;
-    grid-template-areas:
-      "Photo Text";
+.navigation__link__container {
+    
   }
   
-  .Photo { grid-area: Photo; }
+.navigation__links {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    
+  }
   
-  .Text { grid-area: Text; }
-  
+.portfolio__cards {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
 
+.portfolio__card {
+
+}
+
+.portfolio__image {
+    width: 100%;
+}
+
+
+.about {
+    &__photo {
+        width: 100%;
+    }
+}
+
+
+.personal {
   
+}
+
+
+.contact {
+
+
+}
+
+@media screen and (min-width: 501px) {
+    .portfolio {
+        background-color: lightyellow;
+    }
+    .portfolio__cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    .portfolio__card {
+        width: 32%;
+        margin-bottom: 15px;
+
+    }
+}
+
+
+
+
+
