@@ -1,12 +1,3 @@
-main {
-  margin: 5%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -42,13 +33,32 @@ body {
   background-color: rgba(37, 35, 35, 0.932);
 }
 
+main {
+  margin: 5%;
+}
+
+* {
+  margin: 1%;
+  padding: 0;
+}
+
+.job-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .project-cards {
-  height: 60vh;
-  width: 90vw;
+  margin: 5%;
+  padding: 0;
+}
+
+.project-cards {
+  height: 1vh;
+  width: 8vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
+  gap: 3px 3px;
   grid-auto-flow: row;
   grid-template-areas: "project1 project2 project3" "project4 project5 project6";
 }
@@ -78,21 +88,21 @@ body {
 }
 
 .card {
-  height: 100%;
-  width: 100%;
+  height: 70%;
+  width: 70%;
 }
 .card__image {
-  height: 200px;
-  width: 400px;
+  height: 100px;
+  width: 200px;
 }
 
 /* Style buttons */
 .button {
-  background-color: DodgerBlue;
+  background-color: rgba(37, 35, 35, 0.932);
   /* Blue background */
   border: none;
   /* Remove borders */
-  color: white;
+  color: rgb(255, 255, 255);
   /* White text */
   padding: 12px 16px;
   /* Some padding */
@@ -108,10 +118,20 @@ body {
 }
 
 /* about section image css */
-.about__image {
-  width: 30%;
-  height: 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px 10px;
+  grid-auto-flow: column;
+  justify-items: center;
+  grid-template-areas: "Photo Text";
+}
+
+.Photo {
+  grid-area: Photo;
+}
+
+.Text {
+  grid-area: Text;
 }/*# sourceMappingURL=style.css.map */
