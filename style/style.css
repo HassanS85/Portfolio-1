@@ -64,7 +64,8 @@
   text-align: center;
   padding: 14px 16px;
   flex-direction: row;
-  text-decoration: none;
+  -webkit-text-decoration: white;
+          text-decoration: white;
 }
 
 .portfolio__cards {
