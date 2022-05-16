@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
 
-.main {
+body {
     margin:0;
     padding: 0;
     background-color: rgb(151, 190, 190);
@@ -9,6 +9,9 @@
   
   
 .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0;
     padding: 0;
     background-color: rgb(0, 0, 0);
@@ -48,14 +51,18 @@
   }
   
 .navigation__link__container {
-    
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
   }
   
 .navigation__links {
-    display: block;
+    display: flex;
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 14px 16px;
+    flex-direction: row;
+    text-decoration: none;
     
   }
   
@@ -88,7 +95,18 @@
 
 
 .contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    &__contact {
+        margin: 20px;
+        padding:20px 30px;
+        background-color: aqua;
+        text-decoration: none;
+        border: 2px solid black;
 
+    }
 
 }
 
